@@ -54,9 +54,8 @@ const birthDateError = document.getElementById("birthdate1");
 const quantityError = document.getElementById("quantity1");
 const locationsError = document.getElementById("locations1");
 const checkboxError = document.getElementById("checkbox");
-const input = undefined;
 
-
+// validate First name
 function FirstName(input) {
   let first = document.getElementById("first").value;
 
@@ -71,7 +70,7 @@ function FirstName(input) {
   return true;
 }
 
-
+// validate Last name
 function LastName(input){
   let last = document.getElementById("last").value;
 
@@ -86,6 +85,7 @@ function LastName(input){
   return true;
 }
 
+// validate Email
 function Email(input){
   let email = document.getElementById("email").value;
 
@@ -107,6 +107,7 @@ function Email(input){
   return true;
 }
 
+// validate Birthdate
 function Birthdate(input) {
 
   let birthdate = document.getElementById("birthdate").value;
@@ -130,7 +131,8 @@ function Birthdate(input) {
   return true;
 }
 
-function Quantity(input) {
+// Validate Tournament Selection
+function Quantity() {
   let quantity = document.getElementById("quantity");
   if (quantity.value == '' || quantity.value == null ) {
     quantityError.innerHTML = 'Please enter number of tournaments attended.';
@@ -145,6 +147,7 @@ function Quantity(input) {
     return true;
 }
 
+// Validate Location Selection
 function Location() {
   let location = document.getElementsByName("location");
   for(let i=0; i<location.length; i++){
@@ -157,6 +160,7 @@ function Location() {
     return false;
 }
 
+// Validate Terms
 function Terms() {
   let terms = document.getElementById("checkbox1");
   if (terms.checked == false) {
@@ -168,6 +172,7 @@ function Terms() {
   }
 }
 
+// Validate Form
 let criteriaCheck = false;
 
 function validate() {
@@ -206,7 +211,7 @@ form.addEventListener('submit', (e) => {
     email.value = '';
     birthdate.value = '';
     quantity.value = '';
-    location.value = '';
+    location.checked = false;
     terms.checked = false;
   }
 });

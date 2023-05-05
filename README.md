@@ -19,13 +19,13 @@ The form should validate user input via vanilla Javascript and display appropria
 1. Add functionality to the close buttons of the form.
 
 2. Add negative visual feedback to each input when input is incorrect upon submit.
-<p align="center"><img src="README-media/ezgif.com-gif-maker.gif">
+<p align="center"><img src="README-MEDIA/ezgif.com-gif-maker.gif">
 
 3. Add a thank you message upon successfull form validation.
-<p align="center"><img src="README-media/gif2.gif">
+<p align="center"><img src="README-MEDIA/gif2.gif">
 
 4. Fix all responsive issues left by the previous developper.
-<p align="center"><img src="README-media/p4.png">
+<p align="center"><img src="README-MEDIA/p4.png">
 
 > ## **Learning goals of this project**
 

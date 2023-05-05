@@ -3,8 +3,6 @@
 
 <h3 align="center">a mid-sized company specializing in gaming conferences and contests.</h3>
 
-> # **[https://gameon-dylannicolet.netlify.app/](https://gameon-dylannicolet.netlify.app/)**
-
 > ## **In a few words**
 >
 > The project is about building a landing page for GameOn to collect user information via form.
@@ -14,8 +12,7 @@ The form should validate user input via vanilla Javascript and display appropria
 > ## **Developement technologies used**
 
 - HTML and CSS
-- Vanilla Javascript
-- No framework or library allowed
+- Javascript
 
 > ## **Key requirements for the project and a visual of the live results**
 
@@ -34,7 +31,3 @@ The form should validate user input via vanilla Javascript and display appropria
 
 - Learn the basics of JavaScript programming.
 - Learn to harvest the power of JavaScript for web developement.
-
-> ## **Goals achieved?**
-
-<p align="center">Absolutely 100%</p>

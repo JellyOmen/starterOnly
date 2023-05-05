@@ -22,7 +22,7 @@ The form should validate user inputs via Javascript and display appropriate visu
 <p align="center"><img src="README-MEDIA/Error.png">
 
 3. Add a thank you message upon successfull form validation.
-<p align="center"><img src="README-MEDIA/Thanks.gif">
+<p align="center"><img src="README-MEDIA/Thanks.png">
 
 4. Fix all responsive issues left by the previous developper.
 <p align="center"><img src="README-MEDIA/p4.png">

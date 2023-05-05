@@ -60,7 +60,7 @@
               name="reserve"
               action="index.html"
               method="get"
-              onsubmit="return false;"
+              onsubmit="return validate();"
               >
               <div
                 class="formData">
@@ -69,7 +69,7 @@
                   class="text-control"
                   type="text"
                   id="first"
-                  oninput="validate(this)"
+                  oninput="FirstName(this)"
                   name="first"
                   minlength="2"
                   required
@@ -81,7 +81,7 @@
                 <input
                   class="text-control"
                   type="text"
-                  oninput="validate1(this)"
+                  oninput="LastName(this)"
                   id="last"
                   name="last"
                   required
@@ -93,7 +93,7 @@
                 <input
                   class="text-control"
                   type="email"
-                  oninput="validate2(this)"
+                  oninput="Email(this)"
                   id="email"
                   name="email"
                   required
@@ -105,10 +105,11 @@
                 <input
                   class="text-control"
                   type="date"
-                  oninput="validate3(this)"
+                  oninput="Birthdate(this)"
                   id="birthdate"
                   name="birthdate"
                   required
+                  max="9999-12-31"
                 /><br><span id="birthdate1"></span>
               </div>
               <div
@@ -116,20 +117,21 @@
                 <label>How many tournaments have you attended? </label><br>
                 <input 
                   type="number"
-                  class="text-control" 
-                  oninput="validate4(this)" 
+                  class="text-control"
                   id="quantity" 
                   name="quantity" 
+                  oninput="Quantity(this)"
                   min="0" 
-                  max="99" 
-                  required>
+                  max="99"
+                  required
+                  >
                   <span id="quantity1"></span>
               </div>
               <p class="text-label">Where do you want to participate this year?</p>
               <!-- <span id="location">You must choose one option.</span> -->
               <div
-                class="formData">
-                <span id="location1"></span>
+                class="formData"
+                >
                 <input
                   class="checkbox-input"
                   type="radio"
@@ -196,20 +198,22 @@
                   <span class="checkbox-icon"></span>
                   Portland</label
                 >
+                <span id="locations1"></span>
               </div>
               <div
                 class="formData" data-error="">
                 <input
                   class="checkbox-input"
                   type="checkbox"
+                  onclick="Terms(this)"
                   id="checkbox1"
                   checked
-                />
+                >
                 <label class="checkbox2-label" for="checkbox1" required>
                   <span class="checkbox-icon"></span>
                   I have read and I agree to GameOn's terms and conditions.
                 </label>
-                <br><span id="checkbox">You must check to agree to terms and conditions.</span>
+                <br><span id="checkbox"></span>
               </div>
               <div
                 class="formData">

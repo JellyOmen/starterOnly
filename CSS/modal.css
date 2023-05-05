@@ -222,7 +222,6 @@ input {
   font-size: 12px;
   font-weight: normal;
   cursor: pointer;
-  text-align: center;
 }
 .checkbox-label .checkbox-icon,
 .checkbox2-label .checkbox-icon {
@@ -235,7 +234,7 @@ input {
   white-space: nowrap;
   position: absolute;
   left: -30px;
-  top: -1px;
+  top: -9px;
   transition: 0.3s;
 }
 .checkbox-label .checkbox-icon::after,
@@ -305,6 +304,21 @@ input {
 }
 .close:after {
   transform: rotate(-45deg);
+}
+
+.close-modal {
+  text-align: center;
+  background: #fe142f;
+  margin-top: 0.5em;
+  padding-left: 3.2em;
+  padding-right: 3.2em;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 50%;
 }
 .btn-submit,
 .btn-signup {
